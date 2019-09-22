@@ -5,11 +5,16 @@
 > *[https://magician333.github.io/hbmulligan/](https://magician333.github.io/hbmulligan/)*
 
 
-Get HearthBuddy?
+Get HearthBuddy ?
 ---
 Go [Here](https://github.com/ChuckHearthstone/SilverFish), ChuckHearthstone will fit for you
 
-Get CardID?
+Get CardID ?
 ---
 Go [Here](https://github.com/ChuckHearthstone/CardQuery), CardQuery is made by Chuck, It's convenient for search card id and card name !
 
+Contact me ?
+---
+Sorry,  I don't like social intercourse.
+
+from _PurpleFire_
