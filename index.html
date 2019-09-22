@@ -69,35 +69,7 @@
     <label class="label">结果：</label>
     <p id="code" class="is-size-6" />
   </div>
-
-  <script>
-    var button = document.getElementById("make");
-    button.onclick = function () {
-      var cardid = document.getElementById("cardid").value.toUpperCase();
-      if (cardid == "") {
-        alert("卡牌ID为必填项");
-        return;
-      }
-      var myoccupation = document.getElementById("myoccupation").value;
-      var enemyoccupation = document.getElementById("enemyoccupation").value;
-      var holdcard = document.getElementById("holdcard").value;
-      var handcard = document.getElementById("handcard").value.toUpperCase();
-      if (handcard != "") {
-        handcard = handcard + "/";
-      } else {
-        handcard = "/";
-      }
-      var defensive = document.getElementsByName("defensive");
-      var item = null;
-      for (var i = 0; i < defensive.length; i++) { //遍历Radio 
-        if (defensive[i].checked) {
-          item = defensive[i].value;
-        }
-      }
-      var code = cardid + ";" + myoccupation + ";" + enemyoccupation + ";" + holdcard + ";" + handcard + item;
-      document.getElementById("code").innerText = code;
-    }
-  </script>
+  <script src="js/fun.js"></script>
 </body>
 
 </html>
