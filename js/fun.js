@@ -46,3 +46,16 @@ button.onclick = function() {
     item;
   document.getElementById("code").innerText = code;
 };
+
+var result = document.getElementById("result");
+function CopyCode(event) {
+  code = document.getElementById("code");
+  const range = document.createRange();
+  range.selectNode(code);
+  const selection = window.getSelection();
+  if (selection.rangeCount > 0) selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand("copy");
+  alert("已复制留牌策略！");
+}
+result.addEventListener("click", CopyCode, false);
