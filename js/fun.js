@@ -1,4 +1,5 @@
 var button = document.getElementById("make");
+var tempcode = ""; //暂存code
 button.onclick = function() {
   var cardid = document.getElementById("cardid").value.toUpperCase();
   if (cardid == "") {
@@ -44,7 +45,9 @@ button.onclick = function() {
     ";" +
     handcard +
     item;
-  document.getElementById("code").innerText = code;
+  tempcode = code + "\n" + tempcode; //叠加代码并换行
+
+  document.getElementById("code").innerText = tempcode;
 };
 
 var result = document.getElementById("result");
