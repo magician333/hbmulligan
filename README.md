@@ -5,9 +5,17 @@
 > *[https://magician333.github.io/hbmulligan/](https://magician333.github.io/hbmulligan/)*
 
 
+![img](screenshot.png)
+
+
+New Future
+---
+1.clip code by click it！
+2.mass production once！
+
 Get HearthBuddy ?
 ---
-Go [Here](https://github.com/ChuckHearthstone/SilverFish), ChuckHearthstone will fit for you
+Go HearthBuddy Tieba or StudyHb.cn
 
 Get CardID ?
 ---
