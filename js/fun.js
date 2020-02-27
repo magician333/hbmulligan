@@ -58,15 +58,6 @@ function delcodef() {
   codeaera.innerText = tempcode;
 }
 
-function delallcode() {
-  var a = confirm("确定全部删除吗？");
-  if (a == true) {
-    tempcode = "";
-    codeaera.innerText = tempcode;
-  } else {
-  }
-}
-
 var result = document.getElementById("result");
 function CopyCode(event) {
   const range = document.createRange();
