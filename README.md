@@ -24,6 +24,4 @@ Go [Here](https://github.com/ChuckHearthstone/CardQuery), CardQuery is made by C
 
 Contact me ?
 ---
-Sorry,  I don't like social intercourse.
-
-from _PurpleFire_
+Email:magician33333@163.com
