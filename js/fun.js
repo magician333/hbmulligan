@@ -1,6 +1,7 @@
-var button = document.getElementById("make");
 var tempcode = ""; //暂存code
-button.onclick = function() {
+var lastcode = ""; //上一条code
+codeaera = document.getElementById("code");
+function makecodef() {
   var cardid = document.getElementById("cardid").value.toUpperCase();
   if (cardid == "") {
     alert("卡牌ID为必填项");
@@ -45,16 +46,31 @@ button.onclick = function() {
     ";" +
     handcard +
     item;
-  tempcode = code + "\n" + tempcode; //叠加代码并换行
 
-  document.getElementById("code").innerText = tempcode;
-};
+  lastcode = code + "\n";
+  tempcode = code + "\n" + tempcode; //叠加代码并换行
+  codeaera.innerText = tempcode;
+}
+
+function delcodef() {
+  var reg = new RegExp(tempcode.split("\n")[0] + "\n");
+  tempcode = tempcode.replace(reg, "");
+  codeaera.innerText = tempcode;
+}
+
+function delallcode() {
+  var a = confirm("确定全部删除吗？");
+  if (a == true) {
+    tempcode = "";
+    codeaera.innerText = tempcode;
+  } else {
+  }
+}
 
 var result = document.getElementById("result");
 function CopyCode(event) {
-  code = document.getElementById("code");
   const range = document.createRange();
-  range.selectNode(code);
+  range.selectNode(codeaera);
   const selection = window.getSelection();
   if (selection.rangeCount > 0) selection.removeAllRanges();
   selection.addRange(range);
