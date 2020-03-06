@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/bulma.min.css">
-  <script src="js/clipboard.min.js"></script>
   <title>HearthBuddy留牌编辑器</title>
 </head>
 
@@ -14,38 +13,45 @@
   <div class="box" style="width:500px;margin: 0 auto; margin-top: 20px">
     <p class="is-size-3" style="text-align: center">HearthBuddy留牌编辑器</p>
     <p class="is-size-6" style="text-align: right">更多资讯请关注studyhb和炉石兄弟吧</p>
-    <label class="label">卡牌ID(<a href="https://github.com/ChuckHearthBuddy/CardQuery">卡牌ID查询</a>)：</label>
+    <label class="label">卡牌ID(<a href="https://github.com/ChuckHearthBuddy/CardQuery"
+        target="_blank">卡牌ID查询</a>)：</label>
     <input type="text" id="cardid" class="input is-small" placeholder="此项为必填项！" /> </br>
-    <label class="label">我方职业：</label>
-    <div class="select is-small is-primary">
-      <select name="myoccupation" id="myoccupation">
-        <option value="None">全部</option>
-        <option value="warrior">战士</option>
-        <option value="mage">法师</option>
-        <option value="preist">牧师</option>
-        <option value="thief">潜行者</option>
-        <option value="paladin">骑士</option>
-        <option value="warlock">术士</option>
-        <option value="druid">德鲁伊</option>
-        <option value="hunter">猎人</option>
-        <option value="shaman">萨满</option>
-      </select>
+    <div style="display: inline-block;">
+      <label class="label">我方职业：</label>
+      <div class="select is-small is-primary">
+        <select name="myoccupation" id="myoccupation">
+          <option value="None">全部</option>
+          <option value="warrior">战士</option>
+          <option value="mage">法师</option>
+          <option value="preist">牧师</option>
+          <option value="thief">潜行者</option>
+          <option value="paladin">骑士</option>
+          <option value="warlock">术士</option>
+          <option value="druid">德鲁伊</option>
+          <option value="hunter">猎人</option>
+          <option value="shaman">萨满</option>
+        </select>
+      </div>
     </div>
-    <label class="label">对方职业：</label>
-    <div class="select is-small is-primary">
-      <select name="enemyoccupation" id="enemyoccupation">
-        <option value="None">全部</option>
-        <option value="warrior">战士</option>
-        <option value="mage">法师</option>
-        <option value="preist">牧师</option>
-        <option value="thief">潜行者</option>
-        <option value="paladin">骑士</option>
-        <option value="warlock">术士</option>
-        <option value="druid">德鲁伊</option>
-        <option value="hunter">猎人</option>
-        <option value="shaman">萨满</option>
-      </select>
+
+    <div style="display: inline-block;">
+      <label class="label">对方职业：</label>
+      <div class="select is-small is-primary">
+        <select name=" enemyoccupation" id="enemyoccupation">
+          <option value="None">全部</option>
+          <option value="warrior">战士</option>
+          <option value="mage">法师</option>
+          <option value="preist">牧师</option>
+          <option value="thief">潜行者</option>
+          <option value="paladin">骑士</option>
+          <option value="warlock">术士</option>
+          <option value="druid">德鲁伊</option>
+          <option value="hunter">猎人</option>
+          <option value="shaman">萨满</option>
+        </select>
+      </div>
     </div>
+
     <label class="label">留牌策略：</label>
     <div class="select is-small is-primary">
       <select name="holdcard" id="holdcard">
@@ -56,16 +62,15 @@
     </div>
     <label class="label">手牌中包含：</label><input type="text" id="handcard" placeholder="输入卡牌ID，使用/隔开"
       class="input is-small" /> </br>
-    <label class="label">先后手设置：</label>
+    <label class="label">是否后手：</label>
     <div class="control is-primary">
-      <label class="radio"><input type="radio" name="defensive" value="" checked>先手</label>
-      <label class="radio"><input type="radio" name="defensive" value="GAME_005">后手</label>
+      <label class="radio"><input type="radio" name="defensive" value="GAME_005">是</label>
+      <label class="radio"><input type="radio" name="defensive" value="" checked>否</label>
     </div>
     </br>
     <center>
       <button id="makecode" onclick="makecodef()" type="button" class="button is-primary">生成</button>
-      <button id="delcode" onclick="delcodef()" type="button"
-        class="button is-danger">删除上一条</button>
+      <button id="delcode" onclick="delcodef()" type="button" class="button is-danger">删除上一条</button>
     </center>
 
     </br>
@@ -74,7 +79,10 @@
       <p id="code" class="is-size-6" />
     </span>
   </div>
+
   <script src="js/fun.js"></script>
+  <script src="js/clipboard.min.js"></script>
+
 </body>
 
 </html>
