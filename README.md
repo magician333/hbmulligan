@@ -16,6 +16,10 @@ New Future
 
 3.add delete function!
 
+4.fine tuning the ui
+
+5.add ENTER key function
+
 
 Get HearthBuddy ?
 ---
