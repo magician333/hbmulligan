@@ -69,3 +69,9 @@ function CopyCode(event) {
   alert("已复制留牌策略！");
 }
 result.addEventListener("click", CopyCode, false);
+
+window.onkeypress = function(e) {
+  if (e.keyCode == 13) {
+    this.makecodef();
+  }
+};
