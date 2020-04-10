@@ -20,6 +20,8 @@ New Future
 
 5.add ENTER key function
 
+6.add demonhunter
+
 
 Get HearthBuddy ?
 ---
